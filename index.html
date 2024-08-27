@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractile.io</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body class="bg-black text-green-500">
+    <header class="bg-green-900 p-4">
         <nav>
-            <ul>
-                <li><a href="#meet-fractile">Meet Fractile</a></li>
-                <li><a href="#ai-agents">AI Agents</a></li>
-                <li><a href="#chatbot">Chatbot</a></li>
+            <ul class="flex justify-around">
+                <li><a href="#meet-fractile" class="text-green-500 no-underline">Meet Fractile</a></li>
+                <li><a href="#ai-agents" class="text-green-500 no-underline">AI Agents</a></li>
+                <li><a href="#chatbot" class="text-green-500 no-underline">Chatbot</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="meet-fractile">
-            <h1>Meet Fractile</h1>
-            <p>Welcome to Fractile, your gateway to cutting-edge AI solutions.</p>
+        <section id="meet-fractile" class="p-8">
+            <h1 class="text-4xl">Meet Fractile</h1>
+            <p class="mt-4">Welcome to Fractile, your gateway to cutting-edge AI solutions.</p>
         </section>
-        <section id="ai-agents">
-            <h1>AI Agents</h1>
-            <p>Discover the power of our AI Agents.</p>
+        <section id="ai-agents" class="p-8">
+            <h1 class="text-4xl">AI Agents</h1>
+            <p class="mt-4">Discover the power of our AI Agents.</p>
         </section>
-        <section id="chatbot">
-            <h1>Chatbot</h1>
-            <p>Experience our AI-driven chatbot. Ask anything!</p>
-            <div id="chat-container">
-                <div id="messages"></div>
-                <input type="text" id="user-input" placeholder="Type your message here">
-                <button onclick="sendMessage()">Send</button>
+        <section id="chatbot" class="p-8">
+            <h1 class="text-4xl">Chatbot</h1>
+            <p class="mt-4">Experience our AI-driven chatbot. Ask anything!</p>
+            <div id="chat-container" class="flex flex-col items-center">
+                <div id="messages" class="border border-green-500 w-4/5 h-72 overflow-y-scroll mb-4 p-4"></div>
+                <input type="text" id="user-input" placeholder="Type your message here" class="w-4/5 p-2 mb-4">
+                <button onclick="sendMessage()" class="p-2 bg-green-900 text-green-500 border-none cursor-pointer hover:bg-green-700">Send</button>
             </div>
         </section>
     </main>
